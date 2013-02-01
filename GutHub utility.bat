@@ -1,4 +1,4 @@
-::Nevermind this
+::Initial GuTHub
 
 ::Set our Window Title
 @title GitHub_Uility_3663
