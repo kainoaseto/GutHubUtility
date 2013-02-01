@@ -55,8 +55,8 @@ echo [*] This will pull the latest 2013FRC into your WindRiver workspace folder
 pause
 echo [*] *Hint The thing you should put into the next prompt is C:\WindRiver\workspace
 echo [*] If you know what you are doing then go ahead and ignore that last statement
-set /p PaTH = Please input your directory that you want the project installed to:
-git clone https://github.com/team3663/2013FRC.git %PaTH%
+::set /p PaTH = Please input your directory that you want the project installed to:
+git clone https://github.com/team3663/2013FRC.git C:\Users\Kainoa\Desktop\Crap
 echo [*] Done
 echo [*] Press any key to exit.
 pause
