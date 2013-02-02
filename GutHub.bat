@@ -31,17 +31,22 @@ GOTO:menuLOOP
 :menu_1    ----Install GitHub CMD for windows----
 cls
 color 0a	
+	echo  ----Install GitHub CMD for windows----
 	echo [*] Installing Github for windows Cmd
-	echo [*] Just click next on all the windows
-	echo [*] I promise you everything will work out just fine.
+	echo [*] Click [Next] 3 times then you will be at a page with 3 options
+	echo [*] Click the middle option, then click [next] for the rest of the 
+	echo [*] Installer.
 	echo --------------------------------------------------------------
 	pause 
-ghcmd.exe
-echo.[*] Once you completed the install congrats! 
-echo.[*] Now you can use the other options in this program
+	ghcmd.exe
+	echo [*] Once you completed the install congrats! 
+	echo [*] Now you can use the other options in this program
+	echo [*] and you can use the rest of the git commands in the cmd!
+	echo.-----------------------------------------------------------------
+
 	
 	set choice=
-	echo.&set /p choice= Please make a selection or hit ENTER to return: ||GOTO:EOF
+	echo.&set /p choice= Hit ENTER to return: ||GOTO:EOF
 	echo.&call:bootsubmenu_%choice%
 color 0b	
 cls
@@ -55,11 +60,10 @@ echo [*] This will pull the latest 2013FRC into your WindRiver workspace folder
 pause
 echo [*] *Hint The thing you should put into the next prompt is C:\WindRiver\workspace
 echo [*] If you know what you are doing then go ahead and ignore that last statement
-set /p Path = "Enter Directory: C:\"
+echo.&set /p Path = "Enter Directory: C:\"
 git clone https://github.com/team3663/2013FRC.git C:\%Path%
 echo [*] Done
 echo [*] Press any key to exit.
-pause
 
 	set choice=
 	echo.&set /p choice= Please make a selection or hit ENTER to return: ||GOTO:EOF
@@ -69,7 +73,7 @@ cls
 GOTO:EOF
 
 
-:menu_3    Commit and Push Changes
+:menu_3 ----Commit and Push Changes----
 cls
 color 0a
 echo. Starting github setup with 2013FRC
@@ -96,14 +100,12 @@ color 0b
 cls	
 GOTO:EOF
 
-:menu_4    Install Save Credentials
+:menu_4 ----Install Save Credentials(.NET 4 or <)----
 cls
 color 0a
 echo.This wll save you some time
 pause
 gitstore.exe
-pause
-
 	
 	set choice=
 	echo.&set /p choice= Please make a selection or hit ENTER to return: ||GOTO:EOF
@@ -116,8 +118,6 @@ GOTO:EOF
 :header  
 cls        
 color 0a
-adb kill-server
-adb start-server
 cls
 	echo.
 	echo.                ---------------------------
