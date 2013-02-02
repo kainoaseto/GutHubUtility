@@ -36,7 +36,7 @@ color 0a
 	echo [*] I promise you everything will work out just fine.
 	echo --------------------------------------------------------------
 	pause 
-GithubInstall.exe
+ghcmd.exe
 echo.[*] Once you completed the install congrats! 
 echo.[*] Now you can use the other options in this program
 	
@@ -101,7 +101,7 @@ cls
 color 0a
 echo.This wll save you some time
 pause
-gitwinstore.exe
+gitstore.exe
 pause
 
 	
