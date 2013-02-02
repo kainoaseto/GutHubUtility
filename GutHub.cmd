@@ -60,8 +60,8 @@ echo [*] This will pull the latest 2013FRC into your WindRiver workspace folder
 pause
 echo [*] *Hint The thing you should put into the next prompt is C:\WindRiver\workspace
 echo [*] If you know what you are doing then go ahead and ignore that last statement
-echo.&set /p Path = "Enter Directory: C:\"
-git clone https://github.com/team3663/2013FRC.git C:\%Path%
+::echo.&set /p Name = "Enter Project name:"
+git clone https://github.com/team3663/2013FRC.git C:\WindRiver\workspace\2013FRC
 echo [*] Done
 echo [*] Press any key to exit.
 
